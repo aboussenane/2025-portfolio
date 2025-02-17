@@ -16,7 +16,7 @@ import { Octokit } from '@octokit/rest';
 
 interface WeeklyCommit {
   total: number;
-  // Add other fields if needed
+  week: number;
 }
 
 interface RepoStat {
@@ -476,15 +476,13 @@ export default function Home() {
 }
 
 const processMonthlyCommits = (repoStats: RepoStat[]) => {
-  // Initialize an array for the last 12 months
   const months = Array(12).fill(0);
   const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   repoStats.forEach(repo => {
     if (repo.commits && Array.isArray(repo.commits)) {
-      repo.commits.forEach((commit) => {
-        if (commit && commit.week) {
-          // Use the commit's timestamp to get its month
+      repo.commits.forEach((commit: WeeklyCommit) => {
+        if (commit && typeof commit.week === 'number') {
           const date = new Date(commit.week);
           const monthIndex = date.getMonth();
           months[monthIndex] += commit.total;
@@ -493,7 +491,6 @@ const processMonthlyCommits = (repoStats: RepoStat[]) => {
     }
   });
 
-  // Format data for the chart
   return monthNames.map((month, index) => ({
     month,
     commits: Math.round(months[index])
