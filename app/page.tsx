@@ -127,6 +127,15 @@ export default function Home() {
 
   const projects = [
     {
+      title: "Armoury",
+      description:
+        "A full stack application that allows users to create, view, and manage inventory, as well as reservations. It's currently under construction.",
+      techStack: ["React", "Typescript", "WXT"],
+      url: "https://armoury-next.vercel.app/",
+      imageUrl: "/equipment.PNG",
+      alt: "Asset Management System",
+    },
+    {
       title: "Webpage to PDF",
       description:
         "A webpage to PDF chrome extension that allows users to convert web pages to PDF documents.",
@@ -304,7 +313,7 @@ export default function Home() {
                     <span className="inline-block transition-transform translate-y-0 duration-300 ease-in-out group-hover:text-black group-hover:opacity-0">
                       {project.title}
                     </span>
-                    <span className="absolute text-3xl top-full left-0 inline-block transition-transform duration-200 ease-in-out group-hover:-translate-y-[150%] group-hover:-translate-x-[-30px] group-hover:hover:scale-105">
+                    <span className="absolute text-3xl sm:text-5xl top-full left-0 inline-block transition-transform duration-200 ease-in-out group-hover:-translate-y-[150%] group-hover:-translate-x-[-30px] group-hover:hover:scale-105">
                       {project.alt}
                     </span>
                   </AccordionTrigger>
@@ -353,7 +362,7 @@ export default function Home() {
                     <span className="inline-block transition-transform translate-y-0 duration-300 ease-in-out group-hover:text-black group-hover:opacity-0">
                       {exp.title}
                     </span>
-                    <span className="absolute top-full text-3xl left-0 inline-block transition-transform duration-200 ease-in-out group-hover:-translate-y-[150%] group-hover:-translate-x-[-30px] group-hover:hover:scale-105">
+                    <span className="absolute top-full text-3xl sm:text-5xl left-0 inline-block transition-transform duration-200 ease-in-out group-hover:-translate-y-[150%] group-hover:-translate-x-[-30px] group-hover:hover:scale-105">
                       {exp.alt}
                     </span>
                   </AccordionTrigger>
