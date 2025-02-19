@@ -11,8 +11,19 @@ body {
   font-family: var(--font-kanit);
 }
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: auto;  /* IE and Edge */
+  scrollbar-width: auto;  /* Firefox */
+}
+::-webkit-scrollbar {
+  display: auto;
+  background-color: transparent;
+  width: 5px;
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+  
 }
 @layer base {
   :root {

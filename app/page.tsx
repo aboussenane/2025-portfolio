@@ -431,7 +431,7 @@ export default function Home() {
 
               {/* Total Commits Card */}
               <div className="w-[300px] h-[300px] p-6 bg-black text-white rounded-lg flex flex-col items-center justify-center">
-                <h6 className="text-lg font-semibold mb-2">Total Commits</h6>
+                <h6 className="text-lg font-semibold mb-2">Total Commits Last Year</h6>
                 <p className="text-4xl font-bold">{totalCommits}</p>
               </div>
             </div>
