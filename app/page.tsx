@@ -127,14 +127,32 @@ export default function Home() {
 
   const projects = [
     {
+      title: "I H8 PDFs",
+      description:
+        "A full stack application that allows users to upload a fillable (acroforms) PDF and fill it with AI. I'm currently working on addding static PDF functionality.",
+      techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"  ],
+      url: "https://ih8pdfs.com/",
+      imageUrl: "/ih8pdfs.PNG",
+      alt: "AI PDF Filler",
+    },
+    {
       title: "Armoury",
       description:
-        "A full stack application that allows users to create, view, and manage inventory, as well as reservations. It's currently under construction.",
-      techStack: ["React", "Typescript", "WXT"],
+        "A full stack CRUD application that allows users to create, view, and manage inventory, as well as make equipmentreservations.",
+      techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"],
       url: "https://armoury-next.vercel.app/",
       imageUrl: "/equipment.PNG",
       alt: "Asset Management System",
+    },{
+      title: "SpinGuru",
+      description:
+        "SpinGuru is a web application designed to help users discover new music through setlist exploration. It uses NLP to extract track listings from comments retrieved from the youtube API, allowing users to find songs they hear in the videos. The app then searches youtube each song title and displays the video to the user. Currently, results may be not be found everytime due to since I've limited the amount of comments and videos it searches through. This can be improved by widening the search but this would come at increased operational costs.",
+      techStack: ["React", "Javascript", "NextJS"],
+      url: "https://github.com/aboussenane/setlist",
+      imageUrl: "/setlist.PNG",
+      alt: "Google API Web App",
     },
+
     {
       title: "Webpage to PDF",
       description:
@@ -144,15 +162,7 @@ export default function Home() {
       imageUrl: "/webpage-to-PDF.png",
       alt: "Chrome extension",
     },
-    {
-      title: "SpinGuru",
-      description:
-        "SpinGuru is a web application designed to help users discover new music through setlist exploration. It uses NLP to extract track listings from comments retrieved from the youtube API, allowing users to find songs they hear in the videos. The app then searches youtube each song title and displays the video to the user. Currently, results may be not be found everytime due to since I've limited the amount of comments and videos it searches through. This can be improved by widening the search but this would come at increased operational costs.",
-      techStack: ["React", "Javascript", "NextJS", "Shadcn"],
-      url: "https://github.com/aboussenane/setlist",
-      imageUrl: "/setlist.PNG",
-      alt: "Google API Web App",
-    },
+    
     {
       title: "Document Generator",
       description:
@@ -162,23 +172,15 @@ export default function Home() {
       imageUrl: "/docGen.PNG",
       alt: "NodeJS Electron App",
     },
-    {
-      title: "Time Logger",
-      description:
-        "A React app which logs the exact time a button is clicked along with a comment.",
-      techStack: ["React", "Javascript", "CSS"],
-      url: "https://master.d1rdr4srhzrrq8.amplifyapp.com/",
-      imageUrl: "/time-logger.PNG",
-      alt: "React App",
-    },
+ 
   ];
   const experience = [
     {
       title: "BKL Consultants",
       duration: "June 2022 - Present",
       description:
-        "Created various scripts to perform routine file management, large data migrations and data reporting. Managed software license, equipment calibration and maintenance schedules. Utilized REST APIs  to ease migration of large data sets. Creating comprehensive operating procedures for equipment and softwares. Accessed remote equipment via command line. Managed and set up FTP/SFTP servers. Identified IT security risks and wrote scripts to run automatic backups of client communications, protecting the company from risk of data loss and future litigation. Oversaw implementation of IT projects and security training. Conducted electronic and PC repairs.",
-      techStack: ["Python", "Node.JS", "Javascript", "Powershell"],
+        "Created various scripts to perform file management, large data migrations and data reporting. Managed software license, equipment calibration and maintenance schedules. Utilized REST APIs to ease migration of large data sets and automate workflows. Creating comprehensive operating procedures for equipment and softwares. Implemented custom FTP client to transfer noise data from legacy systems. Back engineered montioring equipment to manage via http requests which led to increased uptime and reduced maintenance costs.",
+      techStack: ["Python", "Node.JS", "Javascript", "Shell Scripting", "Powershell"],
       imageUrl: "/",
       alt: "IT Coordinator",
     },
