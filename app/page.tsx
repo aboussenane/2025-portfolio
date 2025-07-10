@@ -143,14 +143,6 @@ export default function Home() {
       url: "https://armoury-next.vercel.app/",
       imageUrl: "/equipment.PNG",
       alt: "Asset Management System",
-    },{
-      title: "SpinGuru",
-      description:
-        "SpinGuru is a web application designed to help users discover new music through setlist exploration. It uses NLP to extract track listings from comments retrieved from the youtube API, allowing users to find songs they hear in the videos. The app then searches youtube each song title and displays the video to the user. Currently, results may be not be found everytime due to since I've limited the amount of comments and videos it searches through. This can be improved by widening the search but this would come at increased operational costs.",
-      techStack: ["React", "Javascript", "NextJS"],
-      url: "https://github.com/aboussenane/setlist",
-      imageUrl: "/setlist.PNG",
-      alt: "Google API Web App",
     },
 
     {
