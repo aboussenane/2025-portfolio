@@ -138,7 +138,7 @@ export default function Home() {
     {
       title: "Armoury",
       description:
-        "A full stack CRUD application that allows users to create, view, and manage inventory, as well as make equipmentreservations.",
+        "A full stack CRUD application that allows users to create, view, and manage inventory, as well as make equipment reservations.",
       techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"],
       url: "https://armoury-next.vercel.app/",
       imageUrl: "/equipment.PNG",
@@ -158,7 +158,7 @@ export default function Home() {
     {
       title: "Document Generator",
       description:
-        "A nodeJS electron app which accesses data from a CRM app and use it to create folders and autofill documents. Saved hours in collective time by automating simple repetitive tasks.",
+        "A nodeJS electron app which accesses data from a CRM and uses it to create folders and autofill documents. Saved hours in collective time by automating simple repetitive tasks.",
       techStack: ["Javascript", "Node.JS"],
       url: "https://github.com/aboussenane/PipedriveDocGenerator",
       imageUrl: "/docGen.PNG",
@@ -168,8 +168,16 @@ export default function Home() {
   ];
   const experience = [
     {
+      "title": "IOA Digital",
+      "duration": "August 2025 - Present",
+      "description": "Developed and maintained high availability backend automations for diverse businesses in a fast-paced environment, hosted on Make.com, N8N, and Google Cloud Provider. Integrated complex REST and GraphQL APIs, handled data modeling, migration, and cleaning, and managed database creation and connections using MySQL and Postgres. Built automated reporting systems and dashboards. Designed and implemented a custom AI-powered Chrome extension that connected GPT to a project database to generate tailored job proposals and cover letters, significantly reducing application time and improving response rates. Fine-tuned model outputs through data modeling and prompt engineering.",
+      "techStack": ["JavaScript", "Python", "Shell", "Make", "SQL", "MySQL", "Postgres", "n8n", "Google Cloud", "OpenAI"],
+      "imageUrl": "/",
+      "alt": "Integrations Developer"
+    },
+    {
       title: "BKL Consultants",
-      duration: "June 2022 - Present",
+      duration: "June 2022 - August 2025",
       description:
         "Created various scripts to perform file management, large data migrations and data reporting. Managed software license, equipment calibration and maintenance schedules. Utilized REST APIs to ease migration of large data sets and automate workflows. Creating comprehensive operating procedures for equipment and softwares. Implemented custom FTP client to transfer noise data from legacy systems. Back engineered montioring equipment to manage via http requests which led to increased uptime and reduced maintenance costs.",
       techStack: ["Python", "Node.JS", "Javascript", "Shell Scripting", "Powershell"],
@@ -208,6 +216,16 @@ export default function Home() {
         "Did great work expecially picking up the stack.",
     },
 
+  ];
+  const certification =[
+    {
+      name: "Make Level 5",
+      description: "Expert"
+    },
+    {
+      name: "Linux Essentials",
+      description: "Linux Professional Institute"
+    }
   ];
   return (
     <main className="flex flex-col overflow-x-hidden snap-y snap-mandatory overflow-y-scroll">
@@ -253,8 +271,8 @@ export default function Home() {
           <div className="relative flex-1 w-full  ">
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black/0 md:bg-black/30 lg:bg-black/0 z-30  "></div> */}
             <FixedText>
-              <h3 className="text-7xl sm:text-9xl font-extrabold break-words text-white">
-                Hi, I&apos;m Adel, a 29 year old software developer
+              <h3 className="text-5xl xs:text-6xl sm:text-7xl md:text-9xl font-extrabold break-normal text-white">
+                Hi, I&apos;m Adel, a software developer based in Vancouver
               </h3>
             </FixedText>
           </div>
@@ -269,9 +287,10 @@ export default function Home() {
               Myself
             </h5>
             <Separator className="w-[90vw] md:max-w-[70vw]" />
-            <p className="text-5xl font-bold break-words max-w-[90vw] md:max-w-[70vw]">
-              I&apos;m a software developer with a passion for building web applications. I&apos;m currently working as an IT Coordinator at BKL Consultants.
-            </p>
+    
+                <p className="text-5xl font-bold break-words max-w-[90vw] md:max-w-[70vw]">
+                I am currently crafting the future of business automation at IOA Digital.
+                </p>
           </div>
           <div className="flex flex-col gap-2 mb-4">
             <h5 className="text-xl font-bold break-words max-w-[90vw] md:max-w-[70vw]">
@@ -401,6 +420,28 @@ export default function Home() {
                   </p>
                 </div>
               ))}
+            </div>
+          </section>
+          {/* Certifications */}
+          <section className="flex flex-col h-full snap-start mx-[10px] sm:mx-[20px] md:mx-[2vw] lg:mx-[2vw] xl:mx-[10vw] mb-10 ">
+            <h5 className="text-xl font-extrabold break-words max-w-[90vw] md:max-w-[70vw]">
+            Certifications
+            </h5>
+            <Separator className="w-[90vw] md:max-w-[70vw]" />
+            <div className="flex flex-col gap-4 justify-center items-center mt-10">
+              <ul>
+              {certification.map((certification, index) => (
+                
+                <div key={index} className="flex flex-col gap-4 mb-4 w-[90vw] md:max-w-[70vw]">
+                  <li>
+                  <p className="text-xl font-regular break-words max-w-[90vw] md:max-w-[70vw]">
+                  {certification.name} - <em>{certification.description}</em>
+                  </p>
+                  
+                  </li>
+                </div>
+              ))}
+              </ul>
             </div>
           </section>
           {/* Github */}
