@@ -136,6 +136,15 @@ export default function Home() {
       alt: "AI PDF Filler",
     },
     {
+      title: "Feeds",
+      description:
+        "Feeds is a developer-friendly feed hosting platform that allows you to create, manage, and share content feeds with text, images, videos, and URLs.",
+      techStack: ["React", "Typescript", "NextJS", "PostgreSQL"],
+      url: "https://feeds-pink.vercel.app/",
+      imageUrl: "/feeds.PNG",
+      alt: "Feeds",
+    },
+    {
       title: "Armoury",
       description:
         "A full stack CRUD application that allows users to create, view, and manage inventory, as well as make equipment reservations.",
