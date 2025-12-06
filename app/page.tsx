@@ -129,7 +129,7 @@ export default function Home() {
     {
       title: "I H8 PDFs",
       description:
-        "A full stack application that allows users to upload a fillable (acroforms) PDF and fill it with AI. I'm currently working on addding static PDF functionality.",
+        "A full stack application that allows users to upload a fillable (acroforms) PDF and fill it with AI. I'm currently working on adding static PDF functionality.",
       techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"  ],
       url: "https://ih8pdfs.com/",
       imageUrl: "/ih8pdfs.PNG",
