@@ -141,7 +141,7 @@ export default function Home() {
         "Feeds is a developer-friendly feed hosting platform that allows you to create, manage, and share content feeds with text, images, videos, and URLs.",
       techStack: ["React", "Typescript", "NextJS", "PostgreSQL"],
       url: "https://feeds-pink.vercel.app/",
-      imageUrl: "/feeds.PNG",
+      imageUrl: "/feeds.png",
       alt: "Feeds",
     },
     {
