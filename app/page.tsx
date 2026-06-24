@@ -141,7 +141,7 @@ export default function Home() {
         "A VST3 audio plugin built with JUCE for music production. Eight independent noise generators with per-channel signal chains, sequencers, envelopes, and FX sends — validated with pluginval for DAW compatibility.",
       techStack: ["C++", "JUCE", "VST3", "CMake"],
       url: "https://github.com/aboussenane/regulator",
-      imageUrl: "/setlist.PNG",
+      imageUrl: "/regulator.png",
       alt: "VST3 Audio Plugin",
     },
     {
@@ -152,15 +152,6 @@ export default function Home() {
       url: "https://feeds-pink.vercel.app/",
       imageUrl: "/feeds.png",
       alt: "Feeds",
-    },
-    {
-      title: "Document Generator",
-      description:
-        "A nodeJS electron app which accesses data from a CRM and uses it to create folders and autofill documents. Saved hours in collective time by automating simple repetitive tasks.",
-      techStack: ["Javascript", "Node.JS"],
-      url: "https://github.com/aboussenane/PipedriveDocGenerator",
-      imageUrl: "/docGen.PNG",
-      alt: "NodeJS Electron App",
     },
 
   ];
@@ -377,9 +368,9 @@ export default function Home() {
             </h5>
             <Separator className="w-[90vw] md:max-w-[70vw]" />
             <p className="text-2xl font-regular break-words max-w-[90vw] md:max-w-[70vw] italic">
-              Javascript / Typescript / React / NextJS / NodeJS / Python /
-              PostgreSQL / SQL / Vercel / Framer-Motion / TailwindCSS / Shadcn /
-              ChakraUI / Git / Linux / Powershell / PHP
+              Javascript / Typescript / React / NextJS / NodeJS / Python / Java /
+              C++ / PostgreSQL / SQL / Vercel / Framer-Motion / TailwindCSS /
+              Shadcn / ChakraUI / Git / Linux / Powershell / PHP
             </p>
           </div>
           <div className="flex flex-col gap-2 mb-4">
