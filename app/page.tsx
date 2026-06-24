@@ -169,8 +169,53 @@ export default function Home() {
       title: "IOA Digital",
       duration: "Aug 2025 – Present · Remote",
       description:
-        "Delivered full-stack web development projects as a solo developer and project manager in a small agency environment. Developed and maintained backend services and automation workflows using Node.js, Make, n8n, JavaScript, Python, and SQL. Built complex REST and GraphQL API integrations across third-party business applications to improve data flow and reduce manual operations. Handled data modeling, database provisioning, migrations, and data cleaning for client-facing and internal systems. Managed client communication, project scoping, implementation timelines, and delivery expectations across multiple software projects.",
-      techStack: ["JavaScript", "Python", "Shell", "Make", "n8n", "SQL", "React", "Next.js", "TypeScript"],
+        "Delivered full-stack web development projects as a solo developer and project manager in a small agency environment. Developed and maintained backend services and automation workflows using Node.js, Make, n8n, JavaScript, Python, and SQL. Built complex REST and GraphQL API integrations across third-party business applications to improve data flow and reduce manual operations. Handled data modeling, database provisioning, migrations, and data cleaning for client-facing and internal systems. Managed client communication, project scoping, implementation timelines, and delivery expectations across multiple software projects. Designed and implemented a custom AI-powered Chrome extension that connected GPT to a project database to generate tailored job proposals and cover letters, significantly reducing application time and improving response rates. Fine-tuned model outputs through data modeling and prompt engineering.",
+      techStack: [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Supabase",
+        "Make",
+        "n8n",
+        "Shell",
+        "SQL",
+      ],
+      projects: [
+        {
+          title: "BluePearl Mortgage Group CRM",
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Next.js"],
+          bullets: [
+            "Built and maintained the primary CRM for a mid-sized mortgage brokerage — leads, deals pipeline, calls, reporting, and admin tooling using Next.js, React, and TypeScript at scale (~200 API routes, 290+ test files).",
+            "Designed integration boundaries between Vercel frontend, Supabase (auth/RLS/realtime), and a GCP Express backend for syncing with Salesforce, processing calls with AI, and ingesting leads from external sources.",
+            "Set up a robust CI/CD pipeline with staging validation and automated tests using Vitest and Playwright.",
+            "Responsible for intake and processing of high-volume call data — 250,000+ call rows, 3,400 calls per day.",
+            "Resulted in cost savings of over $100,000 per year in Salesforce subscriptions.",
+          ],
+        },
+        {
+          title: "Oakhart Design & Construction",
+          techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Next.js"],
+          bullets: [
+            "Built a full-stack project management platform for a multi-million-dollar construction design company to manage projects, lots, models, variations, items, and invoices.",
+            "Automated material quantity calculations across house models and variations, improving quote accuracy and creating estimated annual cost savings in the hundreds of thousands.",
+          ],
+        },
+        {
+          title: "TCAT Metals",
+          techStack: ["React Native", "JavaScript", "PostgreSQL"],
+          bullets: [
+            "Built a lightweight React Native CRM live on the Apple App Store. The app tracks leads and deals for a catalytic converter recycling company.",
+            "Features Google Maps integration so salespeople can get directions to a lead directly from the app.",
+            "Includes a business card scanning feature that uses AI to autofill a lead intake form from a phone camera scan.",
+          ],
+        },
+      ],
       imageUrl: "/",
       alt: "Developer",
     },
@@ -382,9 +427,39 @@ export default function Home() {
                     <div className="flex flex-col mt-2 justify-left items-center sm:flex-row md:flex-row lg:flex-row xl:flex-row gap-4">
                       
                       <div className="flex flex-col gap-4">
+                        {exp.duration && (
+                          <p className="text-lg text-gray-600 break-words max-w-[90vw] md:max-w-[70vw]">
+                            {exp.duration}
+                          </p>
+                        )}
                         <p className="text-xl font-regular break-words max-w-[90vw] md:max-w-[70vw]">
                           {exp.description}
                         </p>
+                        {exp.projects?.map((project, projectIndex) => (
+                          <div
+                            key={projectIndex}
+                            className="border-t border-gray-200 pt-4 max-w-[90vw] md:max-w-[70vw]"
+                          >
+                            <h6 className="text-lg font-semibold mb-2">{project.title}</h6>
+                            <div className="flex gap-2 flex-wrap mb-3">
+                              {project.techStack.map((tech, i) => (
+                                <span
+                                  key={i}
+                                  className="px-2 py-1 bg-gray-50 border border-gray-200 rounded-md text-sm"
+                                >
+                                  {tech}
+                                </span>
+                              ))}
+                            </div>
+                            <ul className="list-disc pl-5 space-y-2 text-lg">
+                              {project.bullets.map((bullet, i) => (
+                                <li key={i} className="break-words">
+                                  {bullet}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
                         <div className="flex gap-2 flex-wrap">
                           {exp.techStack.map((tech, i) => (
                             <span
