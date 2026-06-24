@@ -166,12 +166,13 @@ export default function Home() {
   ];
   const experience = [
     {
-      "title": "IOA Digital",
-      "duration": "August 2025 - Present",
-      "description": "Developed and maintained high availability backend automations for diverse businesses in a fast-paced environment, hosted on Make.com, N8N, and Google Cloud Provider. Integrated complex REST and GraphQL APIs, handled data modeling, migration, and cleaning, and managed database creation and connections using MySQL and Postgres. Built automated reporting systems and dashboards. Designed and implemented a custom AI-powered Chrome extension that connected GPT to a project database to generate tailored job proposals and cover letters, significantly reducing application time and improving response rates. Fine-tuned model outputs through data modeling and prompt engineering.",
-      "techStack": ["JavaScript", "Python", "Shell", "Make", "SQL", "MySQL", "Postgres", "n8n", "Google Cloud", "OpenAI"],
-      "imageUrl": "/",
-      "alt": "Integrations Developer"
+      title: "IOA Digital",
+      duration: "Aug 2025 – Present · Remote",
+      description:
+        "Delivered full-stack web development projects as a solo developer and project manager in a small agency environment. Developed and maintained backend services and automation workflows using Node.js, Make, n8n, JavaScript, Python, and SQL. Built complex REST and GraphQL API integrations across third-party business applications to improve data flow and reduce manual operations. Handled data modeling, database provisioning, migrations, and data cleaning for client-facing and internal systems. Managed client communication, project scoping, implementation timelines, and delivery expectations across multiple software projects.",
+      techStack: ["JavaScript", "Python", "Shell", "Make", "n8n", "SQL", "React", "Next.js", "TypeScript"],
+      imageUrl: "/",
+      alt: "Developer",
     },
     {
       title: "BKL Consultants",
