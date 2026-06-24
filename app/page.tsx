@@ -129,11 +129,20 @@ export default function Home() {
     {
       title: "I H8 PDFs",
       description:
-        "A full stack application that allows users to upload a fillable (acroforms) PDF and fill it with AI. I'm currently working on adding static PDF functionality.",
-      techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"  ],
+        "A full stack PDF editor for static and fillable forms. Upload a PDF, run OCR and AI field extraction, place text overlays on a canvas, and generate a filled document. Spring Boot API with Supabase storage, plus a Next.js frontend.",
+      techStack: ["React", "TypeScript", "Next.js", "Java", "Spring Boot", "PostgreSQL"],
       url: "https://ih8pdfs.com/",
       imageUrl: "/ih8pdfs.PNG",
-      alt: "AI PDF Filler",
+      alt: "AI PDF Editor",
+    },
+    {
+      title: "Regulator",
+      description:
+        "A VST3 audio plugin built with JUCE for music production. Eight independent noise generators with per-channel signal chains, sequencers, envelopes, and FX sends — validated with pluginval for DAW compatibility.",
+      techStack: ["C++", "JUCE", "VST3", "CMake"],
+      url: "https://github.com/aboussenane/regulator",
+      imageUrl: "/setlist.PNG",
+      alt: "VST3 Audio Plugin",
     },
     {
       title: "Feeds",
@@ -145,26 +154,6 @@ export default function Home() {
       alt: "Feeds",
     },
     {
-      title: "Armoury",
-      description:
-        "A full stack CRUD application that allows users to create, view, and manage inventory, as well as make equipment reservations.",
-      techStack: ["React", "Typescript", "NodeJS", "Express", "PostgreSQL"],
-      url: "https://armoury-next.vercel.app/",
-      imageUrl: "/equipment.PNG",
-      alt: "Asset Management System",
-    },
-
-    {
-      title: "Webpage to PDF",
-      description:
-        "A webpage to PDF chrome extension that allows users to convert web pages to PDF documents.",
-      techStack: ["React", "Typescript", "WXT"],
-      url: "https://github.com/aboussenane/pdf-r",
-      imageUrl: "/webpage-to-PDF.png",
-      alt: "Chrome extension",
-    },
-    
-    {
       title: "Document Generator",
       description:
         "A nodeJS electron app which accesses data from a CRM and uses it to create folders and autofill documents. Saved hours in collective time by automating simple repetitive tasks.",
@@ -173,7 +162,7 @@ export default function Home() {
       imageUrl: "/docGen.PNG",
       alt: "NodeJS Electron App",
     },
- 
+
   ];
   const experience = [
     {
