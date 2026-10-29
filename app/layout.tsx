@@ -12,8 +12,8 @@ const kanit = Kanit({
 })
 
 export const metadata: Metadata = {
-  title: "Adel Boussenane",
-  description: "Adel Boussenane&apos;s Portfolio",
+  title: "Adel Boussenane | AI Implementation & Full-Stack Developer",
+  description: "AI implementation and full-stack development by Adel Boussenane. Discovery, architecture, integrations, and production delivery for CRM, recruitment, and monitoring workflows.",
 };
 
 export default function RootLayout({
