@@ -138,7 +138,7 @@ export default function Home() {
     {
       title: "Regulator",
       description:
-        "A VST3 audio plugin built with JUCE for music production. Eight independent noise generators with per-channel signal chains, sequencers, envelopes, and FX sends — validated with pluginval for DAW compatibility.",
+        "A VST3 audio plugin built with JUCE for music production. Eight independent noise generators with per-channel signal chains, sequencers, envelopes, and FX sends - validated with pluginval for DAW compatibility.",
       techStack: ["C++", "JUCE", "VST3", "CMake"],
       url: "https://github.com/aboussenane/regulator",
       imageUrl: "/regulator.png",
@@ -158,35 +158,24 @@ export default function Home() {
   const experience = [
     {
       title: "IOA Digital",
-      duration: "Aug 2025 – Present · Remote",
+      duration: "Aug 2025 - Present · Remote",
       description:
-        "Delivered full-stack web development projects as a solo developer and project manager in a small agency environment. Developed and maintained backend services and automation workflows using Node.js, Make, n8n, JavaScript, Python, and SQL. Built complex REST and GraphQL API integrations across third-party business applications to improve data flow and reduce manual operations. Handled data modeling, database provisioning, migrations, and data cleaning for client-facing and internal systems. Managed client communication, project scoping, implementation timelines, and delivery expectations across multiple software projects. Designed and implemented a custom AI-powered Chrome extension that connected GPT to a project database to generate tailored job proposals and cover letters, significantly reducing application time and improving response rates. Fine-tuned model outputs through data modeling and prompt engineering.",
+        "Full-Stack Developer and primary technical contact for multiple clients. I lead discovery, architecture, scoping, estimates, implementation, deployment, and ongoing client communication. I build AI workflows and integrations around each team's existing systems and mentored two interns on the Blue Pearl project. Additional work includes a Retell AI voice agent demonstration for Panago Pizza and patent document translation and analysis workflows for BlueShift IP.",
       techStack: [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "React",
-        "Next.js",
-        "React Native",
-        "Node.js",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Supabase",
-        "Make",
-        "n8n",
-        "Shell",
-        "SQL",
+        "TypeScript", "JavaScript", "Python", "SQL", "React", "Next.js", "React Native",
+        "Node.js", "Tailwind CSS", "PostgreSQL", "OpenAI", "Vercel AI SDK", "Retell",
+        "REST", "GraphQL", "SOAP", "Make", "n8n", "GCP", "Vercel", "Vitest", "Playwright",
       ],
       projects: [
         {
-          title: "BluePearl Mortgage Group CRM",
-          techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Next.js"],
+          title: "Blue Pearl Mortgage Group CRM",
+          techStack: ["TypeScript", "React", "Next.js", "Node.js", "Whisper", "GPT-5", "Salesforce"],
           bullets: [
-            "Built and maintained the primary CRM for a mid-sized mortgage brokerage — leads, deals pipeline, calls, reporting, and admin tooling using Next.js, React, and TypeScript at scale (~200 API routes, 290+ test files).",
-            "Designed integration boundaries between Vercel frontend, Supabase (auth/RLS/realtime), and a GCP Express backend for syncing with Salesforce, processing calls with AI, and ingesting leads from external sources.",
-            "Set up a robust CI/CD pipeline with staging validation and automated tests using Vitest and Playwright.",
-            "Responsible for intake and processing of high-volume call data — 250,000+ call rows, 3,400 calls per day.",
-            "Resulted in cost savings of over $100,000 per year in Salesforce subscriptions.",
+            "Built an AI CRM for mortgage brokers that analyzes calls, extracts insights, and enriches lead and deal records.",
+            "Designed a webhook-driven pipeline processing 3,400+ calls daily, with per-user FIFO scheduling, rate-limit handling, and checkpoint recovery.",
+            "Used Whisper and GPT-5 for transcription and analysis, delivering structured insights within 3-7 minutes on average.",
+            "Built a hybrid Node.js and Next.js backend that syncs every 15 minutes while keeping Salesforce as the authoritative source of record.",
+            "Delivered over $100,000 in annual Salesforce subscription savings and supported delivery with Vitest, Playwright, and CI/CD.",
           ],
         },
         {
@@ -194,27 +183,38 @@ export default function Home() {
           techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Next.js"],
           bullets: [
             "Built a full-stack project management platform for a multi-million-dollar construction design company to manage projects, lots, models, variations, items, and invoices.",
-            "Automated material quantity calculations across house models and variations, improving quote accuracy and creating estimated annual cost savings in the hundreds of thousands.",
+            "Automated material quantity calculations across house models and variations to improve quote accuracy and reduce manual estimating work.",
           ],
         },
         {
-          title: "TCAT Metals",
-          techStack: ["React Native", "JavaScript", "PostgreSQL"],
+          title: "TCAT Metal Recycler",
+          techStack: ["React Native", "TypeScript", "PostgreSQL", "GPT-5", "Vercel AI SDK"],
           bullets: [
-            "Built a lightweight React Native CRM live on the Apple App Store. The app tracks leads and deals for a catalytic converter recycling company.",
-            "Features Google Maps integration so salespeople can get directions to a lead directly from the app.",
-            "Includes a business card scanning feature that uses AI to autofill a lead intake form from a phone camera scan.",
+            "Developed and published a mobile sales CRM with AI lead ingestion from PDF and Excel files, plus business card scanning that populates lead records.",
+            "Built an agentic enrichment workflow with GPT-5 and Vercel AI SDK, orchestrating Google Places, Tavily, and OpenAI web search with structured outputs and quality checks.",
+            "Enriched 800+ leads with a 98% match rate against verified reference data, using FIFO scheduling, retries, and human review.",
+            "Integrated Google Maps so salespeople can get directions to a lead from the app.",
+          ],
+        },
+        {
+          title: "The Contractor Consultants",
+          techStack: ["Loxo", "Airtable", "AI Candidate Summaries", "API Integrations"],
+          bullets: [
+            "Built a client-facing construction recruitment platform that consolidates legacy systems and gives candidates and clients visibility into application status.",
+            "Supports 300 active users and 400+ job funnels, with average weekly adoption of 88%.",
+            "Implemented bidirectional Loxo sync, Airtable integration, and AI candidate summaries.",
+            "Automated email notifications, video interview scheduling, and recruitment scheduling workflows.",
           ],
         },
       ],
       imageUrl: "/",
-      alt: "Developer",
+      alt: "Full-Stack Developer",
     },
     {
       title: "BKL Consultants",
-      duration: "June 2022 – August 2025",
+      duration: "June 2022 - August 2025",
       description:
-        "Created various scripts to perform file management, large data migrations and data reporting. Managed software license, equipment calibration and maintenance schedules. Utilized REST APIs to ease migration of large data sets and automate workflows. Creating comprehensive operating procedures for equipment and softwares. Implemented custom FTP client to transfer noise data from legacy systems. Back engineered monitoring equipment to manage via HTTP requests which led to increased uptime and reduced maintenance costs.",
+        "As IT Coordinator, I wrote scripts for data migrations, file management, backups, and reporting. I integrated remote monitoring equipment and automated engineering workflows, alongside software licensing, calibration schedules, and operating procedures.",
       techStack: [
         "Python",
         "Node.js",
@@ -231,7 +231,7 @@ export default function Home() {
       ],
       projects: [
         {
-          title: "BKL-Net — Engineering Noise and Vibration Monitoring Application",
+          title: "BKL-Net - Engineering Noise and Vibration Monitoring Application",
           techStack: [
             "React",
             "TypeScript",
@@ -244,10 +244,10 @@ export default function Home() {
             "Next.js",
           ],
           bullets: [
-            "Self-hosted an InfluxDB, PostgreSQL, and Node.js backend environment using Docker.",
-            "Implemented PDF and XLSX report generation for engineering monitoring data and client deliverables.",
-            "Designed periodic data-gathering workflows and health checks for remote monitors, including user notifications for outages.",
-            "Built a client-facing web portal with role-based separation for internal users and external clients.",
+            "Built a full-stack monitoring platform for remote noise and vibration devices, with a client-facing portal, alerts, and reporting.",
+            "Deployed the Node.js backend, InfluxDB, and PostgreSQL with Docker, with monitoring and recovery achieving 99.9% uptime.",
+            "Automated engineering reports, including PDF and XLSX output, eliminating over 8 hours of manual work per week.",
+            "Implemented remote device data collection and health checks, with notifications when monitors go offline.",
           ],
         },
       ],
@@ -342,7 +342,7 @@ export default function Home() {
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black/0 md:bg-black/30 lg:bg-black/0 z-30  "></div> */}
             <FixedText>
               <h3 className="text-5xl xs:text-6xl sm:text-7xl md:text-9xl font-extrabold break-normal text-white">
-                Hi, I&apos;m Adel, a software developer based in Vancouver
+                Hi, I&apos;m Adel, an AI implementation and full-stack developer
               </h3>
             </FixedText>
           </div>
@@ -359,7 +359,7 @@ export default function Home() {
             <Separator className="w-[90vw] md:max-w-[70vw]" />
     
                 <p className="text-5xl font-bold break-words max-w-[90vw] md:max-w-[70vw]">
-                I am currently crafting the future of business automation at IOA Digital.
+                I build AI workflows and full-stack software at IOA Digital, from discovery and architecture through integrations, production delivery, and ongoing client communication.
                 </p>
           </div>
           <div className="flex flex-col gap-2 mb-4">
@@ -368,9 +368,11 @@ export default function Home() {
             </h5>
             <Separator className="w-[90vw] md:max-w-[70vw]" />
             <p className="text-2xl font-regular break-words max-w-[90vw] md:max-w-[70vw] italic">
-              Javascript / Typescript / React / NextJS / NodeJS / Python / Java /
-              C++ / PostgreSQL / SQL / Vercel / Framer-Motion / TailwindCSS /
-              Shadcn / ChakraUI / Git / Linux / Powershell / PHP
+              JavaScript / TypeScript / Python / SQL / React / React Native / Next.js /
+              Node.js / Tailwind CSS / REST / GraphQL / SOAP / OpenAI / Anthropic /
+              Gemini / Vercel AI SDK / Retell / Make / n8n / Apps Script /
+              PostgreSQL / MySQL / InfluxDB / Docker / Linux / GCP / Vercel /
+              Vitest / Playwright / CI
             </p>
           </div>
           <div className="flex flex-col gap-2 mb-4">
