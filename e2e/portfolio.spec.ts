@@ -6,6 +6,8 @@ test('resume copy and existing accordions @smoke', async ({ page }, testInfo) =>
   await page.goto('/');
   await expect(page).toHaveTitle(/AI Implementation & Full-Stack Developer/);
   await expect(page.getByRole('heading', { name: /AI implementation and full-stack developer/ })).toBeVisible();
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /AI implementation and full-stack development/);
+  await expect(page.getByText(/I build AI workflows and full-stack software at IOA Digital/)).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('hero.png'), fullPage: false });
   for (const title of ['I H8 PDFs', 'Regulator', 'Feeds', 'IOA Digital', 'BKL Consultants']) {
     const trigger = page.getByRole('button', { name: new RegExp(title) });
